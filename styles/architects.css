@@ -1,8 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+} */
+
 .work-sans-fonts {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+/* Shared styles */
+.display-flex{
+  display: flex;
+}
+.dark-1{
+  color: rgba(19, 19, 19, 1);
+  
+}
+.dark-2{
+  color: rgba(66, 66, 66, 1);
+}
+.dark-3{
+  color: rgba(114, 114, 114, 1);
+  
+}
+.primary-btn{
+  padding: 20px 25px;
+  color: white;
+  background-color: rgba(255, 144, 14, 1);
+  border:none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.header-bg-color{
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* Nav Styles */
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar, .banner{
+  max-width: 1140px;
+  /* for any center align style */
+  margin: 0 auto;
+}
+.brand{
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.nav-link{
+  text-decoration: none;
+  font-weight: 500;
+  
+}
+
+.list-item{
+  list-style: none;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  
+}
+
+/* Banner related styles */
+.banner-content{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  /* margin-bottom: 50px; */
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 25px;
+}
+.banner-description{
+  font-weight: normal;
+  font-size: 16px;
+}
+.banner button{
+  margin-bottom: 50px;
+}
+.banner img{
+  width: 100%;
+  /* margin: 0 auto; */
+  margin-bottom: 20px;
+  
+}
+/* .banner-img{
+  margin: 0px 240px 50px 240px;
+} */
+
+/* Small devices responsive styles */
+@media screen and (max-width: 576px) {
+  .navbar, .nav-links{
+    flex-direction: column;
+  }
+  .header-bg-color{
+    width: 100%;
+  }
 }
