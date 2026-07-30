@@ -21,130 +21,190 @@ img{
   font-weight: 400;
   font-style: normal;
 }
+
 /* Shared styles */
-.display-flex{
+.display-flex {
   display: flex;
 }
-.dark-1{
+
+.dark-1 {
   color: rgba(19, 19, 19, 1);
-  
+
 }
-.dark-2{
+
+.dark-2 {
   color: rgba(66, 66, 66, 1);
 }
-.dark-3{
+
+.dark-3 {
   color: rgba(114, 114, 114, 1);
-  
+
 }
-.primary-btn{
+
+.primary-btn {
   padding: 20px 25px;
   color: white;
   background-color: rgba(255, 144, 14, 1);
-  border:none;
+  border: none;
   border-radius: 8px;
   font-weight: 600;
   font-size: 1rem;
 }
-.header-bg-color{
+
+.header-bg-color {
   background-color: rgba(255, 144, 14, 0.1);
 }
-main{
-  width: 1200px;
+
+main {
+  width: 1140px;
   margin: 0 auto;
 }
-main > section{
+
+main>section {
   margin-top: 80px;
 }
 
+.section-title {
+  font-weight: 700;
+  font-size: 2.7rem;
+}
+
 /* Nav Styles */
-.navbar{
+.navbar {
   justify-content: space-between;
   align-items: center;
 }
-.navbar, .banner{
-  max-width: 1200px;
+
+.navbar,
+.banner {
+  max-width: 1140px;
   /* for any center align style */
   margin: 0 auto;
 }
-.brand{
+
+.brand {
   font-weight: 700;
   font-size: 2.8rem;
 }
-.nav-link{
+
+.nav-link {
   text-decoration: none;
   font-weight: 500;
-  
+
 }
 
-.list-item{
+.list-item {
   list-style: none;
   margin-right: 30px;
-  font-weight: 500;
-  font-size: 18px;
-  
+  /* font-weight: 500;
+  font-size: 18px; */
+
 }
 
 /* Banner related styles */
-.banner-content{
+.banner-content {
   max-width: 850px;
   margin: 0 auto;
   text-align: center;
-  /* margin-bottom: 50px; */
-}
-.banner-title{
-  font-weight: 700;
-  font-size: 4rem;
-  margin-bottom: 25px;
-}
-.banner-description{
-  font-weight: normal;
-  font-size: 16px;
-}
-.banner button{
   margin-bottom: 50px;
 }
-.banner img{
+
+.banner-title {
+  font-weight: 700;
+  font-size: 4rem;
+  /* margin-bottom: 25px; */
+}
+
+/* .banner button {
+  margin-bottom: 50px;
+} */
+
+.banner img {
   width: 100%;
   /* margin: 0 auto; */
-  margin-bottom: 20px;
-  
+  /* margin-bottom: 20px; */
+
 }
+
 /* .banner-img{
   margin: 0px 240px 50px 240px;
 } */
 
 /* Teams Section styles */
-.teams{
+.teams {
   align-items: center;
 }
-.teams-img-container{
+
+.teams-img-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
-.our-features{
+
+.teams-img-container img {
+  /* width: 100%; */
+}
+
+.our-features {
   max-width: 530px;
   margin-left: 70px;
 }
-#quick-list{
+
+#quick-list {
   font-weight: 500;
   font-size: 2.7rem;
 }
-#of-our{
+
+/* .features-title {
   font-weight: 700;
   font-size: 2.7rem;
-}
-#features{
-  font-weight: 700;
-  font-size: 2.7rem;
+} */
+
+#features {
   color: rgba(255, 144, 14, 1);
 }
-/* Small devices responsive styles */
+
+/* Small devices responsive styles -- (Nav, Header) */
 @media screen and (max-width: 576px) {
-  .navbar, .nav-links{
+
+  .navbar,
+  .nav-links,
+  .teams {
     flex-direction: column;
   }
-  .header-bg-color{
-    width: 100%;
+
+  /* Teams & Features Section Responsive style */
+  .teams-img-container {
+    grid-template-columns: repeat(1, 1fr);
+    /* margin-left: 20px; */
+
   }
+
+  /* .teams-img-container > img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  } */
+  .our-features {
+    width: 250px;
+    margin-left: 20px;
+  }
+
+  .teams {
+    align-items: normal;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+  .teams {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .our-features {
+    /* width: 250px; */
+    margin-left: 50px auto;
+  }
+
 }
